@@ -1,0 +1,10 @@
+
+<ul>
+    <% for (var i = 0; i < users.length; i++) { %>
+        <li> <%= users[i]['name'] %> - <%= users[i]['emaail'] %> </li>
+    <% } %>
+</ul>
+
+<form action="/logout?_method=DELETE" method="POST">
+  <button type="submit">Log Out</button>
+</form>
